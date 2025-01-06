@@ -1,0 +1,319 @@
+html {
+  background-color: var(--secondary);
+
+  /** farver **/
+  --primary: #db1f12;
+  --secondary: #d3cdc7;
+  --tertiary: #ffffff;
+  --quarternary: #000000;
+
+  /** spacing **/
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2rem;
+  --space-xl: 3rem;
+  --space-xxl: 6rem;
+  --space-xxxl: 10;
+
+  --size-xxs: 8px;
+  --size-xs: 10px;
+  --size-s: 12px;
+  --size-xm: 14px;
+  --size-m: 16px;
+  --size-l: 20px;
+  --size-xl: 25px;
+  --size-xxl: 30px;
+  --size-xxxl: 40px;
+}
+
+a {
+  color: var(--quarternary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+/* header (menu) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--secondary);
+  z-index: 1;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.multimedie_menu {
+  flex: 1;
+  color: var(--primary);
+  text-transform: uppercase;
+  font-size: var(--size-sm);
+  letter-spacing: 0.5px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+/* Styling for aktivt link */
+.menu a.active {
+  color: var(--primary); /* Rød tekst */
+}
+
+/* Standard styling for links */
+.menu a {
+  color: var(--quarternary); /* Sort tekst som standard */
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: var(--primary); /* Skift til rød ved hover */
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  .menu a.active {
+    color: var(--primary);
+    font-size: 1.2rem; /* For eksempel større tekst */
+  }
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: var(--secondary);
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+/* menuens tekst forbliver centreret når det er desktop */
+@media screen and (min-width: 900px) {
+  .logo {
+    width: 40px;
+    margin-right: 18rem;
+  }
+}
+
+/* Skjuler submenuen som standard */
+.menu .submenu {
+  display: none; /* Skjul submenu som standard */
+  position: absolute; /* Sørger for, at den placeres relativt til forælderen */
+  top: 100%; /* Placer submenu lige under Portfolio */
+  left: 0; /* Placer submenu lige under forælderens venstre kant */
+  background-color: var(--secondary); /* Baggrundsfarve */
+  padding: 0;
+  list-style-type: none;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: max-content; /* Sørger for, at submenu kun strækker sig så langt som dens indhold */
+}
+
+/* Vis submenuen, når musen er over Portfolio */
+.menu-portfolio:hover .submenu {
+  display: block;
+}
+
+/* For desktop */
+@media screen and (min-width: 900px) {
+  .menu-portfolio {
+    position: relative; /* Sørger for, at submenuen er placeret i forhold til Portfolio */
+  }
+
+  .submenu {
+    text-align: right; /* Justerer hele submenuen til højre */
+  }
+
+  .submenu li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .submenu li a {
+    text-align: right; /* Sørger for, at alle links står til højre */
+  }
+}
+
+/* For mobil */
+@media screen and (max-width: 900px) {
+  .menu .submenu {
+    display: none; /* Skjul submenu som standard */
+    position: relative; /* Sørger for, at den placeres relativt til Portfolio */
+    top: 100%; /* Læg den lige under Portfolio */
+    left: 0; /* Sørger for, at den starter ved venstre kant af Portfolio */
+    width: 100%; /* Gør den bred nok til at fylde skærmen, hvis ønsket */
+    background-color: var(--secondary); /* Ensartet baggrund */
+    text-align: center; /* Centrerer teksten */
+    padding: 0; /* Fjern unødvendig padding */
+  }
+
+  /* Vis submenuen, når musen er over Portfolio */
+  .menu-portfolio:hover .submenu {
+    display: block; /* Vis submenuen */
+  }
+
+  .menu-portfolio {
+    position: relative; /* Sørger for, at dropdown placeres korrekt */
+  }
+
+  .submenu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--quarternary); /* Justér tekstfarven */
+    background-color: var(--secondary); /* Matchende baggrundsfarve */
+  }
+}
+
+/* footer */
+
+footer {
+  margin-top: 5rem;
+  padding-bottom: 0rem;
+  padding-top: 3rem;
+  background-color: var(--tertiary);
+}
+
+.flex_footer_1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer_logo {
+  max-width: 100px;
+  align-self: flex-end;
+}
+
+.footer_logo_div {
+  align-self: flex-end;
+}
+
+.footer_kategori {
+  align-self: flex-end;
+  margin-bottom: 3rem;
+  font-size: var(--size-sm);
+  text-decoration: underline;
+}
+
+.footer_tekst {
+  list-style-type: none;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 900px) {
+  footer {
+    margin-top: 10rem;
+    padding-bottom: 0rem;
+    padding-top: 10rem;
+    background-color: var(--tertiary);
+  }
+
+  .footer_logo {
+    max-width: 150px;
+  }
+
+  .footer_logo_div {
+    align-self: center;
+    margin-bottom: 7rem;
+  }
+
+  .footer_kategori {
+    align-self: center;
+    margin-bottom: 9rem;
+    font-size: var(--size-xl);
+  }
+}
