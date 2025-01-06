@@ -1,0 +1,284 @@
+img {
+  width: 100%;
+}
+
+img {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block;
+}
+
+.grid_portræt {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  margin-left: var(--space-sm);
+  margin-right: var(--space-sm);
+}
+
+h2 {
+  padding-top: 5rem;
+  font-size: var(--size-xxxl);
+  margin-left: var(--space-sm);
+  margin-right: var(--space-sm);
+}
+
+h3 {
+  padding-top: 0rem;
+  margin-left: var(--space-sm);
+  margin-right: var(--space-sm);
+}
+
+p {
+  margin-left: var(--space-sm);
+  margin-right: var(--space-sm);
+}
+
+.about {
+  margin-bottom: 5rem;
+  display: block;
+  margin-top: -3rem;
+}
+
+@media screen and (max-width: 700px) {
+  .ansigt {
+    margin-top: 2rem;
+    margin-right: var(--space-sm);
+    max-width: 250px;
+    position: absolute;
+    right: 0;
+  }
+
+  .hår {
+    max-width: 350px;
+    padding-top: 21rem;
+    padding-bottom: 2rem;
+    margin-left: var(--space-sm);
+    margin-right: var(--space-sm);
+  }
+}
+
+.firkant {
+  width: 85%; /* Bredde på firkanten */
+  height: 620px; /* Højde på firkanten */
+  border: 2px solid black; /* Sort kant med 2px tykkelse */
+  background-color: transparent; /* Ingen fyld */
+  position: absolute;
+  margin-top: -45.5rem;
+  margin-left: var(--space-l);
+  margin-right: var(--space-xl);
+}
+
+.info_om {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.billede_tekst {
+  font-size: var(--size-xxs);
+  margin: 0;
+}
+
+.mexico {
+  max-width: 100px;
+  margin-left: var(--space-sm);
+  margin-right: var(--space-sm);
+}
+
+.cv {
+  order: -1;
+  margin-bottom: -2rem;
+  padding-bottom: 1.3rem;
+}
+
+.flex_om {
+  display: flex;
+  margin-top: 7rem;
+  justify-content: space-between;
+}
+
+.streg {
+  width: 100%;
+  height: 1px;
+  background-color: var(--quarternary);
+  margin-top: 10px;
+  margin-bottom: 0rem;
+}
+
+.lottiefile_mobil {
+  margin-top: -2.5rem;
+}
+
+.cv_indhold {
+  margin-top: 2rem;
+  margin-left: var(--space-sm);
+  margin-right: var(--space-sm);
+}
+
+.sko {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: var(--space-sm);
+  margin-right: var(--space-sm);
+}
+
+#kontakt {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: var(--tertiary);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.mail_om {
+  color: var(--primary);
+}
+
+.streg_kontakt {
+  margin-top: -1rem;
+  height: 1px;
+  background-color: var(--primary);
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.social_om {
+  color: var(--primary);
+}
+
+.social_om:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+  .lottiefile_desktop {
+    display: none;
+  }
+  .lille_billede {
+    display: none;
+  }
+  .grid_tekst_billede {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+  }
+  .about_desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .lottiefile_mobil {
+    display: none;
+  }
+  .about_mobil {
+    display: none;
+  }
+}
+
+/* gør udtræksskærmen pæn i formatet ved lottiefilen */
+@media (min-width: 500px) and (max-width: 700px) {
+  .streg {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+  .streg {
+    margin-bottom: -5rem;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  .streg {
+    margin-bottom: -4rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .grid_portræt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-left: var(--space-m);
+    margin-right: var(--space-m);
+  }
+  .overskrift_om {
+    align-content: end;
+  }
+
+  .lille_billede {
+    justify-content: end;
+  }
+  .grid_om {
+    display: grid;
+    grid-template-columns: 10fr 10fr 2fr 1fr;
+  }
+  .about {
+    margin-bottom: 5rem;
+    display: block;
+    margin-top: -10rem;
+  }
+  .billede_tekst {
+    font-size: var(--size-s);
+    margin: 0;
+  }
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ansigt {
+    max-width: 400px;
+    justify-self: center;
+  }
+
+  .hår {
+    max-width: 400px;
+    justify-self: center;
+  }
+
+  .kompetencer {
+    margin-top: 10rem;
+    margin-right: 10rem;
+  }
+
+  .intro_om {
+    align-self: center;
+    margin-left: 10rem;
+    margin-top: 4rem;
+  }
+
+  .firkant {
+    max-height: 1550px;
+    max-width: 1150px;
+    margin-top: -32rem;
+    position: absolute;
+  }
+
+  #kontakt {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .streg_kontakt {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: -1rem;
+  }
+  .cv_tekst {
+    max-width: 600px;
+  }
+  .sko {
+    max-width: 200px;
+    justify-self: end;
+    align-self: end;
+  }
+}
