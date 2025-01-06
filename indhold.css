@@ -1,0 +1,15 @@
+img {
+  width: 100%;
+}
+
+main {
+  margin-left: var(--space-sm);
+  margin-right: var(--space-sm);
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    margin-left: var(--space-m);
+    margin-right: var(--space-m);
+  }
+}
