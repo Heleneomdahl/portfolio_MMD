@@ -21,12 +21,7 @@ iframe {
 
 .titel_indhold {
   padding-bottom: 0;
-  padding-top: var(--space-l);
   color: var(--quarternary);
-}
-
-.overskrift_indhold {
-  padding-bottom: var(--space-s);
 }
 
 .streg {
@@ -40,9 +35,18 @@ iframe {
   display: flex;
   justify-content: space-between;
 }
+.flex_titel2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: var(--space-l);
+}
 
 .face_insta {
   text-decoration: underline;
+}
+
+.tilbage {
+  margin-bottom: 3rem;
 }
 
 /* mobil */
@@ -55,8 +59,10 @@ iframe {
   h2 {
     padding-top: var(--space-l);
   }
+
   h1 {
-    padding-bottom: var(--space-l);
+    padding-bottom: var(--space-sm);
+    padding-top: var(--space-sm);
   }
 }
 
@@ -65,6 +71,9 @@ iframe {
   main {
     max-width: 1200px;
     margin: 0 auto;
+  }
+  h1 {
+    padding-bottom: 2rem;
   }
 
   p {
@@ -95,6 +104,9 @@ iframe {
   }
   .læring {
     padding-bottom: var(--space-sm);
+  }
+  .tilbage {
+    margin-bottom: 6rem;
   }
 }
 

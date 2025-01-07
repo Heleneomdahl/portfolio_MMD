@@ -13,7 +13,9 @@ html {
   --space-sm: 1rem;
   --space-m: 1.5rem;
   --space-l: 2rem;
+  --space-ll: 2.5rem;
   --space-xl: 3rem;
+  --space-xll: 4rem;
   --space-xxl: 6rem;
   --space-xxxl: 10rem;
 
@@ -36,7 +38,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--primary);
-  font-size: 2rem;
+  font-size: var(--space-ll);
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 3rem;
@@ -48,7 +50,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--primary);
-    font-size: 4rem;
+    font-size: var(--space-xll);
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 6rem;
