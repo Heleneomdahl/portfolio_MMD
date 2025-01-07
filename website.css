@@ -9,8 +9,37 @@ main {
 
 @media screen and (min-width: 600px) {
   main {
-    margin-left: var(--space-m);
-    margin-right: var(--space-m);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .website_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  p {
+    padding-top: var(--space-m);
+    padding-bottom: var(--space-xl);
+  }
+  h2 {
+    padding-top: var(--space-xl);
+  }
+  h1 {
+    padding-bottom: var(--space-xl);
+  }
+
+  .flex_billede {
+    align-self: end;
+  }
+
+  .flex_billede1 {
+    align-self: start;
+  }
+  .galleri_billede {
+    display: none;
+  }
+  .web_løsning {
+    padding-top: 0;
   }
 }
 
@@ -25,9 +54,4 @@ main {
   h1 {
     padding-bottom: var(--space-l);
   }
-}
-
-.website_grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }

@@ -296,9 +296,7 @@ footer {
 
 @media screen and (min-width: 900px) {
   footer {
-    margin-top: 10rem;
-    padding-bottom: 0rem;
-    padding-top: 10rem;
+    margin-top: 2rem;
     background-color: var(--tertiary);
   }
 
@@ -308,12 +306,12 @@ footer {
 
   .footer_logo_div {
     align-self: center;
-    margin-bottom: 7rem;
+    margin-bottom: 1rem;
   }
 
   .footer_kategori {
     align-self: center;
-    margin-bottom: 9rem;
+    margin-bottom: 3rem;
     font-size: var(--size-xl);
   }
 }
