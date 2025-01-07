@@ -123,7 +123,7 @@ p {
   margin-top: 1rem;
   font-family: "Cormorant Garamond";
   font-weight: 500;
-  font-size: var(--size-m);
+  font-size: var(--size-l);
 }
 
 button {
@@ -131,7 +131,7 @@ button {
   margin-bottom: 2rem;
   font-family: "Cormorant Garamond";
   font-weight: 500;
-  font-size: var(--size-m);
+  font-size: var(--size-l);
   background-color: var(--secondary);
   border: solid var(--quarternary) 1px;
   border-radius: 10px;

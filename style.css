@@ -64,7 +64,7 @@ h4 {
 p {
   font-family: "Cormorant Garamond";
   font-weight: 500;
-  font-size: var(--size-m);
+  font-size: var(--size-l);
 }
 
 a {
@@ -72,6 +72,12 @@ a {
   font-weight: 500;
   color: var(--quarternary);
   text-decoration: none;
+}
+
+li {
+  font-family: "Cormorant Garamond";
+  font-weight: 500;
+  font-size: var(--size-l);
 }
 
 a:hover {
