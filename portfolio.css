@@ -9,18 +9,6 @@
   opacity: 1;
 }
 
-@media screen and (min-width: 700px) {
-  .portfolio_flex {
-    display: flex;
-    align-items: flex-end;
-  }
-
-  .billede_portfolio {
-    max-height: 400px;
-    width: 100%;
-  }
-}
-
 .to_billeder {
   display: flex;
   gap: 10px;
@@ -32,7 +20,9 @@
 }
 
 .tekst_portfolio {
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  margin-top: -6rem;
 }
 
 .to_billeder_1,
@@ -53,4 +43,35 @@
 
 .billede_portfolio.fade-out {
   opacity: 0.3;
+}
+
+.flex_portfolio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.streg {
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .portfolio_flex {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: var(--space-l);
+  }
+
+  .billede_portfolio {
+    max-height: 400px;
+    width: 100%;
+  }
+  .portfolio_overskrift {
+    font-size: 6rem;
+    margin-top: 6rem;
+  }
+  .tekst_portfolio {
+    padding-bottom: 7rem;
+    text-align: center;
+    margin-top: -6rem;
+  }
 }

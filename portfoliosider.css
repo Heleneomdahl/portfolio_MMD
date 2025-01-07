@@ -22,10 +22,11 @@ iframe {
 .titel_indhold {
   padding-bottom: 0;
   padding-top: var(--space-l);
+  color: var(--quarternary);
 }
 
 .overskrift_indhold {
-  padding-bottom: var(--space-sm);
+  padding-bottom: var(--space-s);
 }
 
 .streg {
@@ -39,12 +40,18 @@ iframe {
   padding-bottom: var(--space-m);
 }
 
+.flex_titel {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* mobil */
 @media screen and (max-width: 600px) {
   p {
     padding-top: var(--space-xs);
     padding-bottom: var(--space-l);
   }
+
   h2 {
     padding-top: var(--space-l);
   }
@@ -59,9 +66,7 @@ iframe {
     max-width: 1200px;
     margin: 0 auto;
   }
-  h1 {
-    padding-bottom: var(--space-xl);
-  }
+
   p {
     padding-top: var(--space-m);
   }
