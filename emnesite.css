@@ -12,4 +12,27 @@ main {
     margin-left: var(--space-m);
     margin-right: var(--space-m);
   }
+  .emnesite_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .forside {
+    width: 100%; /* bestem bredden på billedet */
+    height: 320px; /* bestem højden på billedet */
+    object-fit: cover; /* gør billedet fylder hele containeren */
+    object-position: top; /* juster billedets position (kan være top, center, bottom, eller specifikke værdier) */
+  }
+  p {
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-l);
+  }
+  h2 {
+    padding-top: var(--space-l);
+  }
+  h1 {
+    padding-bottom: var(--space-l);
+  }
 }
