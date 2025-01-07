@@ -9,22 +9,40 @@ main {
 
 @media screen and (min-width: 600px) {
   main {
-    margin-left: var(--space-m);
-    margin-right: var(--space-m);
+    max-width: 1200px;
+    margin: 0 auto;
   }
   .emnesite_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: var(--space-l);
+  }
+
+  .emnesite_grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: end;
+  }
+
+  .figma {
+    order: 1;
+  }
+
+  h1 {
+    padding-bottom: var(--space-xl);
+  }
+
+  .emnesite_læring {
+    padding-bottom: var(--space-m);
+  }
+  p {
+    padding-top: var(--space-m);
   }
 }
 
 @media screen and (max-width: 600px) {
-  .forside {
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-    object-position: top;
-  }
   p {
     padding-top: var(--space-xs);
     padding-bottom: var(--space-l);
