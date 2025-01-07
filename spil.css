@@ -7,10 +7,22 @@ main {
   margin-right: var(--space-sm);
 }
 
+.grid_elementer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 @media screen and (min-width: 600px) {
   main {
     margin-left: var(--space-m);
     margin-right: var(--space-m);
+  }
+  .spil_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .spil_order {
+    order: 1;
   }
 }
 
