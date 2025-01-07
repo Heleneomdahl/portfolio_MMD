@@ -67,6 +67,13 @@ p {
   font-size: var(--size-l);
 }
 
+.rød_p {
+  color: var(--primary);
+  font-family: "Cormorant Garamond";
+  font-weight: 500;
+  font-size: var(--size-l);
+}
+
 a {
   font-family: "Cormorant Garamond";
   font-weight: 500;
