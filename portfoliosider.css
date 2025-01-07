@@ -1,4 +1,5 @@
 /* sammenfatte side af de fire portfoliosider */
+/* generel */
 img {
   width: 100%;
 }
@@ -18,6 +19,41 @@ iframe {
   width: 100%;
 }
 
+.titel_indhold {
+  padding-bottom: 0;
+  padding-top: var(--space-l);
+}
+
+.overskrift_indhold {
+  padding-bottom: var(--space-sm);
+}
+
+.streg {
+  width: 100%;
+  height: 1.2px;
+  background-color: var(--quarternary);
+  margin-bottom: var(--space-l);
+}
+
+.tilbage {
+  padding-bottom: var(--space-m);
+}
+
+/* mobil */
+@media screen and (max-width: 600px) {
+  p {
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-l);
+  }
+  h2 {
+    padding-top: var(--space-l);
+  }
+  h1 {
+    padding-bottom: var(--space-l);
+  }
+}
+
+/* desktop */
 @media screen and (min-width: 600px) {
   main {
     max-width: 1200px;
@@ -55,27 +91,6 @@ iframe {
   .læring {
     padding-bottom: var(--space-sm);
   }
-  .titel_indhold {
-    padding-bottom: 0;
-    padding-top: var(--space-l);
-  }
-
-  .overskrift_indhold {
-    padding-bottom: var(--space-sm);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  p {
-    padding-top: var(--space-xs);
-    padding-bottom: var(--space-l);
-  }
-  h2 {
-    padding-top: var(--space-l);
-  }
-  h1 {
-    padding-bottom: var(--space-l);
-  }
 }
 
 /* gør at margin fungerer indtil max-width optræder*/
@@ -84,15 +99,4 @@ iframe {
     margin-left: var(--space-m);
     margin-right: var(--space-m);
   }
-}
-
-.virksomhed_tekst {
-  padding-bottom: 0;
-}
-
-.streg {
-  width: 100%;
-  height: 1px;
-  background-color: var(--quarternary);
-  margin-bottom: var(--space-l);
 }

@@ -315,3 +315,7 @@ footer {
     font-size: var(--size-xl);
   }
 }
+
+.multimedie_tekst {
+  padding-top: 0;
+}
