@@ -1,0 +1,69 @@
+/* sammenfatte side af de fire portfoliosider */
+img {
+  width: 100%;
+}
+
+main {
+  margin-left: var(--space-sm);
+  margin-right: var(--space-sm);
+}
+
+.grid_elementer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  h1 {
+    padding-bottom: var(--space-xl);
+  }
+  p {
+    padding-top: var(--space-m);
+  }
+
+  .website_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .bunden {
+    align-items: end;
+    margin-top: var(--space-sm);
+  }
+
+  .flex_billede1 {
+    align-self: start;
+  }
+  .galleri_billede {
+    display: none;
+  }
+
+  .midten {
+    margin-top: var(--space-sm);
+  }
+  .order {
+    order: -1;
+  }
+  .læring {
+    padding-bottom: var(--space-sm);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-l);
+  }
+  h2 {
+    padding-top: var(--space-l);
+  }
+  h1 {
+    padding-bottom: var(--space-l);
+  }
+}
