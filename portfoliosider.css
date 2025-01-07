@@ -36,13 +36,13 @@ iframe {
   margin-bottom: var(--space-l);
 }
 
-.tilbage {
-  padding-bottom: var(--space-m);
-}
-
 .flex_titel {
   display: flex;
   justify-content: space-between;
+}
+
+.face_insta {
+  text-decoration: underline;
 }
 
 /* mobil */

@@ -1,5 +1,10 @@
 /* fire projekter */
 
+.portfolio_overskrift {
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+
 .billede_portfolio {
   max-height: 250px;
   width: 100%;
@@ -22,7 +27,7 @@
 .tekst_portfolio {
   padding-bottom: 4rem;
   text-align: center;
-  margin-top: -6rem;
+  margin-top: -2rem;
 }
 
 .to_billeder_1,
@@ -58,7 +63,7 @@
   .portfolio_flex {
     display: flex;
     align-items: flex-end;
-    padding-bottom: var(--space-l);
+    padding-bottom: 2rem;
   }
 
   .billede_portfolio {

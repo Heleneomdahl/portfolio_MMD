@@ -132,11 +132,15 @@ button {
   font-family: "Cormorant Garamond";
   font-weight: 500;
   font-size: var(--size-l);
-  background-color: var(--secondary);
+  background-color: var(--tertiary);
   border: solid var(--quarternary) 1px;
   border-radius: 10px;
   padding-left: var(--space-sm);
   padding-right: var(--space-sm);
+}
+
+.face_insta {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 700px) {
