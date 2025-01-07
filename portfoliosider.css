@@ -14,6 +14,10 @@ main {
   gap: 20px;
 }
 
+iframe {
+  width: 100%;
+}
+
 @media screen and (min-width: 600px) {
   main {
     max-width: 1200px;
@@ -34,7 +38,8 @@ main {
 
   .bunden {
     align-items: end;
-    margin-top: var(--space-sm);
+    margin-top: var(--space-m);
+    padding-bottom: var(--space-xl);
   }
 
   .galleri_billede {
@@ -42,12 +47,20 @@ main {
   }
 
   .midten {
-    margin-top: var(--space-sm);
+    margin-top: var(--space-m);
   }
   .order {
     order: -1;
   }
   .læring {
+    padding-bottom: var(--space-sm);
+  }
+  .titel_indhold {
+    padding-bottom: 0;
+    padding-top: var(--space-l);
+  }
+
+  .overskrift_indhold {
     padding-bottom: var(--space-sm);
   }
 }
@@ -71,4 +84,15 @@ main {
     margin-left: var(--space-m);
     margin-right: var(--space-m);
   }
+}
+
+.virksomhed_tekst {
+  padding-bottom: 0;
+}
+
+.streg {
+  width: 100%;
+  height: 1px;
+  background-color: var(--quarternary);
+  margin-bottom: var(--space-l);
 }
