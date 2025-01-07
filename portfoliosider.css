@@ -37,9 +37,6 @@ main {
     margin-top: var(--space-sm);
   }
 
-  .flex_billede1 {
-    align-self: start;
-  }
   .galleri_billede {
     display: none;
   }
@@ -65,5 +62,13 @@ main {
   }
   h1 {
     padding-bottom: var(--space-l);
+  }
+}
+
+/* gør at margin fungerer indtil max-width optræder*/
+@media (min-width: 600px) and (max-width: 1250px) {
+  main {
+    margin-left: var(--space-m);
+    margin-right: var(--space-m);
   }
 }
