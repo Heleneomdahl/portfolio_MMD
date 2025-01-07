@@ -19,10 +19,6 @@ main {
   }
   p {
     padding-top: var(--space-m);
-    padding-bottom: var(--space-xl);
-  }
-  h2 {
-    padding-top: var(--space-xl);
   }
   h1 {
     padding-bottom: var(--space-xl);
@@ -38,8 +34,8 @@ main {
   .galleri_billede {
     display: none;
   }
-  .web_løsning {
-    padding-top: 0;
+  .bunden {
+    margin-top: var(--space-sm);
   }
 }
 

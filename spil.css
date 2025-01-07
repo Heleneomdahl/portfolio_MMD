@@ -10,19 +10,35 @@ main {
 .grid_elementer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.grid_end {
+  align-items: end;
 }
 
 @media screen and (min-width: 600px) {
   main {
-    margin-left: var(--space-m);
-    margin-right: var(--space-m);
+    max-width: 1200px;
+    margin: 0 auto;
   }
   .spil_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
   .spil_order {
     order: 1;
+  }
+  h1 {
+    padding-bottom: var(--space-xl);
+  }
+
+  p {
+    padding-top: var(--space-m);
+  }
+  .diagrammer {
+    margin-top: var(--space-sm);
   }
 }
 

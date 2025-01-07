@@ -16,7 +16,6 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    margin-bottom: var(--space-l);
   }
 
   .emnesite_grid1 {
@@ -39,6 +38,9 @@ main {
   }
   p {
     padding-top: var(--space-m);
+  }
+  .midten {
+    margin-top: var(--space-sm);
   }
 }
 
