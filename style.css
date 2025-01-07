@@ -36,10 +36,23 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--primary);
-  font-size: 4rem;
+  font-size: 2rem;
   text-align: center;
-  margin-top: 4rem;
-  margin-bottom: 6rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 700px) {
+  h1 {
+    font-family: "Libre Bodoni";
+    font-weight: 50;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary);
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+  }
 }
 
 h2 {

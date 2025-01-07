@@ -46,7 +46,7 @@ iframe {
 }
 
 /* mobil */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   p {
     padding-top: var(--space-xs);
     padding-bottom: var(--space-l);
@@ -61,7 +61,7 @@ iframe {
 }
 
 /* desktop */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   main {
     max-width: 1200px;
     margin: 0 auto;
@@ -99,7 +99,7 @@ iframe {
 }
 
 /* gør at margin fungerer indtil max-width optræder*/
-@media (min-width: 600px) and (max-width: 1250px) {
+@media (min-width: 700px) and (max-width: 1250px) {
   main {
     margin-left: var(--space-m);
     margin-right: var(--space-m);
