@@ -132,8 +132,6 @@ header {
   flex: 1;
   color: var(--primary);
   text-transform: uppercase;
-  font-size: var(--size-sm);
-  letter-spacing: 0.5px;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -185,7 +183,7 @@ nav {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1020px) {
   .menu a.active {
     color: var(--primary);
     font-size: 1.2rem; /* For eksempel større tekst */
@@ -208,7 +206,7 @@ nav {
 .burger {
   display: none;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1020px) {
   .menu {
     display: none;
   }
@@ -251,10 +249,10 @@ nav {
 }
 
 /* menuens tekst forbliver centreret når det er desktop */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1020px) {
   .logo {
     width: 40px;
-    margin-right: 20rem;
+    margin-right: 21rem;
   }
 }
 
@@ -278,7 +276,7 @@ nav {
 }
 
 /* For desktop */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1020px) {
   .menu-portfolio {
     position: relative; /* Sørger for, at submenuen er placeret i forhold til Portfolio */
   }
@@ -298,7 +296,7 @@ nav {
 }
 
 /* For mobil */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1020px) {
   .menu .submenu {
     display: none; /* Skjul submenu som standard */
     position: relative; /* Sørger for, at den placeres relativt til Portfolio */
@@ -363,7 +361,7 @@ footer {
   line-height: 1.5;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1020px) {
   footer {
     margin-top: 2rem;
     background-color: var(--tertiary);
@@ -387,4 +385,6 @@ footer {
 
 .multimedie_tekst {
   padding-top: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
